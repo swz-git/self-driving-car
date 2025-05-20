@@ -9,9 +9,9 @@ csv = "1.0.2"
 flatbuffers = "0.5.0"
 ordered-float = "1.0.1"
 
-nalgebra = "0.18.0"
+nalgebra.workspace = true
 
-rlbot = "0.4.1"
+rlbot.workspace = true
 
 common = { path = "../common" }
 

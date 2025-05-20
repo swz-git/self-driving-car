@@ -1,4 +1,5 @@
 [workspace]
+resolver = "3"
 members = [
     "brain",
     "brain-test-data",
@@ -14,6 +15,13 @@ members = [
 lto = true
 codegen-units = 1
 
+[workspace.dependencies]
+nalgebra = { git = "https://github.com/dimforge/nalgebra", rev = "v0.22.1" }
+ncollide3d = "0.25.0"
+rlbot = { path = "../rlbot-rust" }
+
 [patch.crates-io]
-#rlbot = { path = "../rlbot-rust" }
-#chip = { path = "../chip" }
+nalgebra = { git = "https://github.com/dimforge/nalgebra", rev = "v0.22.1" }
+# ncollide3d = { git = "https://github.com/dimforge/ncollide", rev = "v0.25.0" }
+# rlbot = { path = "../rlbot-rust" }
+chip = { path = "../chip" }

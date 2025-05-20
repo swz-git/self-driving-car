@@ -5,9 +5,9 @@ authors = ["John Simon <john@whatisaph.one>"]
 edition = "2018"
 
 [dependencies]
-nalgebra = "0.18.0"
+nalgebra.workspace = true
 
-rlbot = "0.4.1"
+rlbot.workspace = true
 
 common = { path = "../common" }
 

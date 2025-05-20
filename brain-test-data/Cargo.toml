@@ -7,9 +7,9 @@ edition = "2018"
 [dependencies]
 lazy_static = "1.1.0"
 
-nalgebra = "0.18.0"
+nalgebra.workspace = true
 
-rlbot = "0.4.1"
+rlbot.workspace = true
 
 collect = { path = "../collect" }
 

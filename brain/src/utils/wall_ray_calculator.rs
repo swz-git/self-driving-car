@@ -54,7 +54,7 @@ impl WallRayCalculator {
                 }
                 true
             })
-            .filter_map(|(wall, m)| wall.toi_with_ray(m, &ray, false))
+            .filter_map(|(wall, m)| wall.toi_with_ray(m, &ray, 10., false))
             .min_by_key(|&toi| NotNan::new(toi).unwrap())
             .unwrap();
         (ray.origin + ray.dir * toi).to_2d()
